@@ -41,12 +41,12 @@
         </nav>
         <ul class="contact-list">
           <li>
-            <a class="contact-link current" href="mailto:info@devstudio.com"
+            <a class="contact-link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="contact-link current" href="tel:+11(000)111-11-11"
+            <a class="contact-link" href="tel:+11(000)111-11-11"
               >+11 (000) 111-11-11</a
             >
           </li>
@@ -59,7 +59,7 @@
       <section class="section fon-main section-main">
         <div class="container">
           <h1 class="title-hero">Effective Solutions for Your Business</h1>
-          <button class="btn" type="button">Order Service</button>
+          <button data-modal-open class="btn" type="button">Order Service</button>
         </div>
       </section>
       <!--section advantage-->
@@ -410,5 +410,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="btn-modal-close" data-modal-close>
+        <svg class="svg-modal-close" width="8" height="8">
+          <use class="svg-close" href="./images/icons.svg#icon-close" ></use>
+        </svg>
+      </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
